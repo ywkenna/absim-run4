@@ -1,0 +1,63 @@
+{
+  "scenario": {
+    "id": "2025KJUJ_etri_24h_1st_mpdua",
+    "time": {
+      "begin": 43200,
+      "end": 50400
+    },
+    "input": {
+      "fileType": "SALT",
+      "node": "map/node.xml",
+      "link": "map/edge.xml",
+      "connection": "map/connection.xml",
+      "trafficLightSystem": "map/tss.xml",
+      "route": "output/2025KJUJ_etri_24h_1st_mpdua_0_0.rou.xml 2025KJUJ_etri_24h_1st_mpdua_1_0.rou.xml 2025KJUJ_etri_24h_1st_mpdua_2_0.rou.xml",
+      "event": "map/event_1km_additional_0_0.xml"
+    },
+    "route": {
+      "region_target": "KJUJ",
+      "day_target": "20220629",
+      "taz_target": "code/taz_target.csv",
+      "vds_target": "code/vds_target.csv",
+      "zone2taz": "code/zone2taz.csv",
+      "vds2stdlink": "code/vds2id_kjuj_20250908.csv",
+
+      "od_raw": "raw/2023_OD_MOD_PSN.csv",
+      "vds_raw": "raw/MRT_TF_INFO_2022M06.csv",
+      "vds_raw_dir" : "raw/vds/",
+      "od_raw_target": "raw/TAZ_TARGET_2023_OD_MOD_PSN.csv",
+      "vds_raw_target": "raw/VDS_TARGET_1H_MRT_TF_INFO_2022M06.csv",
+
+      "od_matrix": "product/OD_MATRIX.csv",
+      "t_od_matrix": "product/T_OD_MATRIX.csv",
+      "trip_data": "product/TRIP.csv",
+
+      "vds_table": "product/VDS_TARGET_VW_1H.csv",
+      "vds_renewal" : "true",
+
+      "routing_type": ["DTXX", "DTST", "DTWR", "DTNR"],
+
+      "dua_sec_period": 600,
+
+      "taz_edges_event": "raw/event/taz_edges_event.csv", 
+      "od_matrix_event": "raw/event/od_matrix_event.csv",
+
+      "router_begin_input": "OD",
+      "router_end_output": "ROUTE",
+
+      "target_time_begin": "120000",
+      "target_time_end": "140000"
+
+    },
+    "parameter": {
+      "minCellLength": 30,
+      "vehLength": 5
+    },
+    "output": {
+      "fileDir": "output/2025KJUJ_etri_24h_1st_mpdua",
+      "period": 600,
+      "level": "link",
+      "save": 1
+    }
+  }
+}

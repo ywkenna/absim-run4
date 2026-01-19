@@ -1,0 +1,5 @@
+o_taz,d_taz,volume,starttime,endtime,duration
+taz_1,taz_2,1000,130000,140000,900
+taz_3,taz_4,1000,130000,140000,900
+taz_5,taz_2,500,130000,140000,900
+taz_5,taz_4,500,130000,140000,900

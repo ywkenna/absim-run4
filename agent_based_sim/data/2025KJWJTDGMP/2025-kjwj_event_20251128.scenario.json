@@ -1,0 +1,28 @@
+{
+  "scenario": {
+    "id": "2025-kjwj_event_1km_3000_0_0",
+    "time": {
+      "begin": 43200,
+      "end": 50400
+    },
+    "input": {
+      "fileType": "SALT",
+      "node": "map/node.xml",
+      "link": "map/edge.xml",
+      "connection": "map/connection.xml",
+      "trafficLightSystem": "map/tss.xml",
+      "route": "output/2025KJUJ_etri_24h_1st_mpdua_event_1km_3000_0_0_43200_50400.rou.xml",
+      "event": "map/event_1km_additional_0_0.xml"
+    },
+    "parameter": {
+      "minCellLength": 30,
+      "vehLength": 5
+    },
+    "output": {
+      "fileDir": "output/2025KJWJ_event_1km_3000_0_0/",
+      "period": 600,
+      "level": "link",
+      "save": 1
+    }
+  }
+}
