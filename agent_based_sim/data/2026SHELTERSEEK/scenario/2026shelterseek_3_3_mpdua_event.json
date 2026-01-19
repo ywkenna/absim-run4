@@ -11,7 +11,7 @@
       "link": "map/edge.xml",
       "connection": "map/connection.xml",
       "trafficLightSystem": "map/tss.xml",
-      "route": "output/2026shelterseek_3_3_mpdua_0_0.rou.xml output/2026shelterseek_3_3_mpdua_1_0.rou.xml output/2026shelterseek_3_3_mpdua_2_0.rou.xml",
+      "route": "output/2026shelterseek_mpdua_3_3_0_0.rou.xml output/2026shelterseek_mpdua_3_3_1_0.rou.xml output/2026shelterseek_mpdua_3_3_2_0.rou.xml",
       "event": "map/event_5km_additional_0_0.xml"
     },
     "route": {
