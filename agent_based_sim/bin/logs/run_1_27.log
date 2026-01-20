@@ -1,0 +1,436 @@
+#########################
+SALT Simulator with MPDUA
+#########################
+
+현재시각 : 2026-01-20 02:00:07
+========================================
+구성정보 설정
+----------------------------------------
+-----> 전역 파일 경로 : ../data/2026SHELTERSEEK/scenario/
+-----> 시나리오 파일 : ../data/2026SHELTERSEEK/scenario/2026shelterseek_1_27_mpdua_event.json
+Loading Road Network ... SimScenarioInfo: _node_file (../data/2026SHELTERSEEK/scenario/map/node.xml)
+done
+Loading Vehicle Demand ... done
+Loading Traffic Signal System ... done
+[Simulation Output (Periodic)] >> 2026shelterseek_1_27/2026shelterseek_1_27_PeriodicOutput.csv 
+[Progress status] >> 2026shelterseek_1_27/progress.txt 
+Loading Event ... [Debugging] ParserSALT::loadEventXML() --- (Event) id = event_5km, begin = 46800, end = 50400
+[Debugging] EventAttribute_LinkAccessControl::setRestrictLinks() --- myLinkIDs.size() = 698
+[Debugging] EventAttribute_LinkAccessControl::ssetACPLinks() --- myEnterLinkIDs.size() = 25
+[Debugging] EventAttribute_LinkAccessControl::setUniDirectionRestrict() --- myUniDirLinkIDs.size() = 25
+[Debugging] EventAttribute_LinkAccessControl::setUniDirectionOpposite() --- myUniDirOppLinkIDs.size() = 25
+[Debugging] capacity_option = 1
+[Debugging] EventManager::registerEvent() --- myEvents size : 1
+done
+
+[Simulation Info] 
+Input 
+	-Simulation Name: 2026shelterseek_1_27
+	-Road Network: ../data/2026SHELTERSEEK/scenario/map/node.xml, ../data/2026SHELTERSEEK/scenario/map/edge.xml, ../data/2026SHELTERSEEK/scenario/map/connection.xml
+	-Vehicle Demand: ../data/2026SHELTERSEEK/scenario/output/2026shelterseek_mpdua_1_27_0_0.rou.xml ../data/2026SHELTERSEEK/scenario/output/2026shelterseek_mpdua_1_27_1_0.rou.xml ../data/2026SHELTERSEEK/scenario/output/2026shelterseek_mpdua_1_27_2_0.rou.xml 
+	-Traffic Light System: ../data/2026SHELTERSEEK/scenario/map/tss.xml
+	-Time Range: 43200~50400
+	-Event: ../data/2026SHELTERSEEK/scenario/map/event_5km_additional_0_0.xml
+Output 
+	-Output Per Period: 2026shelterseek_1_27/2026shelterseek_1_27_PeriodicOutput.csv
+
+
+
+현재시각 : 2026-01-20 02:00:08
+========================================
+기초 데이터 생성
+----------------------------------------
+-----> taz_target : 7
+-----> vds_target : 5
+-----> vds2stdlink_edge_id : 6
+-----> vds2stdlink_vds_id : 6
+-----> vds2stdlink_link_id : 6
+-----> vds2stdlink_spot_vds_id : 5
+-----> vds2stdlink_spot_link_id : 5
+-----> zone2taz : 634
+-----> taz2zone : 634
+-----> od_raw_target : 8827
+-----> od_raw_target : 8827
+-----> od_matrix : 49
+-----> od_matrix : 49
+
+
+get_vds_raw_kjuj() START--->>> 
+vds_raw file does not exist!  ../data/2026SHELTERSEEK/scenario/raw/MRT_TF_INFO_2022M06.csv
+-----> vds_raw_target : 3596
+-----> vds_table : 5
+-----> vds_weight_day_avg : 24
+-----> vds_volume_day : 5
+-----> taz_edge : 7
+-----> taz_edge_o : 7
+-----> taz_edge_d : 7
+-----> vds_edge_edge_id : 3
+-----> vds_edge_vds_id : 3
+
+
+현재시각 : 2026-01-20 02:00:09
+========================================
+경로 테이블 생성
+----------------------------------------
+-----> num_vertices[links.size()] : 6771
+-----> RoutingSelect : 0 -----> Processing : Routing Table: 0
+-----> RoutingSelect : 1 -----> Processing : Routing Table: 1
+-----> RoutingSelect : 2 -----> Processing : Routing Table: 2
+
+Elapsed Time : 12 seconds
+
+
+현재시각 : 2026-01-20 02:00:21
+========================================
+Trip 생성 
+----------------------------------------
+-----> VDS 발생확률 검증 : VDS(VDS0009a, VDS0010b, VDS0020b, VDS0043a, VDS0044b, ) 발생확률은 0% 입니다.
+-----> total trips_info(C) : 417210 Generated.
+-----> taz_edge_event : 38
+-----> od_matrix_event : 22
+-----> total trips_info(E) : 7000 Generated.
+-----> total trips_info(C+E) : 424210 Generated.
+-----> trips_info.size(time filtered) : 54356
+
+Elapsed Time: 37 seconds
+
+
+현재시각 : 2026-01-20 02:00:59
+========================================
+경로 할당 
+----------------------------------------
+-----> RoutingSelect : 0 -----> route file path : ../data/2026SHELTERSEEK/scenario/output/2026shelterseek_mpdua_1_27_0_0.rou.xml
+-----> RoutingSelect : 1 -----> route file path : ../data/2026SHELTERSEEK/scenario/output/2026shelterseek_mpdua_1_27_1_0.rou.xml
+-----> RoutingSelect : 2 -----> route file path : ../data/2026SHELTERSEEK/scenario/output/2026shelterseek_mpdua_1_27_2_0.rou.xml
+
+Elapsed Time: 2 seconds
+
+
+
+
+###################################
+SALT Simulator with MPDUA : Start !
+###################################
+
+
+number of vehicles to record : 0 vs. the size of myVehiclesTrajectory : 0
+output dir: 2026shelterseek_1_27, sim ID: 2026shelterseek_1_27
+[Simulation Output - Trajectory] >> 2026shelterseek_1_27/2026shelterseek_1_27_trajectory.csv 
+4% done
+
+
+########## SC->doSimulationStep(43800)
+
+
+현재시각 : 2026-01-20 02:01:45
+========================================
+경로 테이블 생성
+----------------------------------------
+-----> num_vertices[links.size()] : 6771
+-----> RoutingSelect : 0 -----> Processing : Routing Table: 0
+-----> RoutingSelect : 1 -----> Processing : Routing Table: 1
+-----> RoutingSelect : 2 -----> Processing : Routing Table: 2
+
+Elapsed Time : 12 seconds
+
+
+현재시각 : 2026-01-20 02:01:58
+========================================
+경로 재할당
+----------------------------------------
+ ChangeList.size() : 22437
+
+
+9% done
+14% done
+
+
+########## SC->doSimulationStep(44400)
+
+
+현재시각 : 2026-01-20 02:02:07
+========================================
+경로 테이블 생성
+----------------------------------------
+-----> num_vertices[links.size()] : 6771
+-----> RoutingSelect : 0 -----> Processing : Routing Table: 0
+-----> RoutingSelect : 1 -----> Processing : Routing Table: 1
+-----> RoutingSelect : 2 -----> Processing : Routing Table: 2
+
+Elapsed Time : 13 seconds
+
+
+현재시각 : 2026-01-20 02:02:21
+========================================
+경로 재할당
+----------------------------------------
+ ChangeList.size() : 20647
+
+
+19% done
+24% done
+
+
+########## SC->doSimulationStep(45000)
+
+
+현재시각 : 2026-01-20 02:02:34
+========================================
+경로 테이블 생성
+----------------------------------------
+-----> num_vertices[links.size()] : 6771
+-----> RoutingSelect : 0 -----> Processing : Routing Table: 0
+-----> RoutingSelect : 1 -----> Processing : Routing Table: 1
+-----> RoutingSelect : 2 -----> Processing : Routing Table: 2
+
+Elapsed Time : 13 seconds
+
+
+현재시각 : 2026-01-20 02:02:48
+========================================
+경로 재할당
+----------------------------------------
+ ChangeList.size() : 18242
+
+
+29% done
+
+
+########## SC->doSimulationStep(45600)
+
+
+현재시각 : 2026-01-20 02:03:03
+========================================
+경로 테이블 생성
+----------------------------------------
+-----> num_vertices[links.size()] : 6771
+-----> RoutingSelect : 0 -----> Processing : Routing Table: 0
+-----> RoutingSelect : 1 -----> Processing : Routing Table: 1
+-----> RoutingSelect : 2 -----> Processing : Routing Table: 2
+
+Elapsed Time : 13 seconds
+
+
+현재시각 : 2026-01-20 02:03:17
+========================================
+경로 재할당
+----------------------------------------
+ ChangeList.size() : 15496
+
+
+34% done
+39% done
+
+
+########## SC->doSimulationStep(46200)
+
+
+현재시각 : 2026-01-20 02:03:34
+========================================
+경로 테이블 생성
+----------------------------------------
+-----> num_vertices[links.size()] : 6771
+-----> RoutingSelect : 0 -----> Processing : Routing Table: 0
+-----> RoutingSelect : 1 -----> Processing : Routing Table: 1
+-----> RoutingSelect : 2 -----> Processing : Routing Table: 2
+
+Elapsed Time : 13 seconds
+
+
+현재시각 : 2026-01-20 02:03:48
+========================================
+경로 재할당
+----------------------------------------
+ ChangeList.size() : 12748
+
+
+44% done
+[Debugging] EventAttribute_LinkAccessControl::enforce() --- 
+[Debugging] CurrentStep = 46800
+[Debugging] myLinkIDS.size() : 694
+[Debugging] Complete to set in myLinkIDS
+[Debugging] Complete to set in myEnterLinkIDS
+[Debugging] Complete to set in myUniDirLinkIDs
+[Debugging] Complete to set in myUniDirOppLinkIDs
+49% done
+
+
+########## SC->doSimulationStep(46800)
+
+
+현재시각 : 2026-01-20 02:04:06
+========================================
+경로 테이블 생성
+----------------------------------------
+-----> num_vertices[links.size()] : 6771
+-----> RoutingSelect : 0 -----> Processing : Routing Table: 0
+-----> RoutingSelect : 1 -----> Processing : Routing Table: 1
+-----> RoutingSelect : 2 -----> Processing : Routing Table: 2
+
+Elapsed Time : 14 seconds
+
+
+현재시각 : 2026-01-20 02:04:21
+========================================
+경로 재할당
+----------------------------------------
+ ChangeList.size() : 41006
+
+
+54% done
+
+
+########## SC->doSimulationStep(47400)
+
+
+현재시각 : 2026-01-20 02:04:42
+========================================
+경로 테이블 생성
+----------------------------------------
+-----> num_vertices[links.size()] : 6771
+-----> RoutingSelect : 0 -----> Processing : Routing Table: 0
+-----> RoutingSelect : 1 -----> Processing : Routing Table: 1
+-----> RoutingSelect : 2 -----> Processing : Routing Table: 2
+
+Elapsed Time : 14 seconds
+
+
+현재시각 : 2026-01-20 02:04:56
+========================================
+경로 재할당
+----------------------------------------
+ ChangeList.size() : 38320
+
+
+59% done
+64% done
+
+
+########## SC->doSimulationStep(48000)
+
+
+현재시각 : 2026-01-20 02:05:18
+========================================
+경로 테이블 생성
+----------------------------------------
+-----> num_vertices[links.size()] : 6771
+-----> RoutingSelect : 0 -----> Processing : Routing Table: 0
+-----> RoutingSelect : 1 -----> Processing : Routing Table: 1
+-----> RoutingSelect : 2 -----> Processing : Routing Table: 2
+
+Elapsed Time : 13 seconds
+
+
+현재시각 : 2026-01-20 02:05:31
+========================================
+경로 재할당
+----------------------------------------
+ ChangeList.size() : 35653
+
+
+69% done
+74% done
+
+
+########## SC->doSimulationStep(48600)
+
+
+현재시각 : 2026-01-20 02:05:51
+========================================
+경로 테이블 생성
+----------------------------------------
+-----> num_vertices[links.size()] : 6771
+-----> RoutingSelect : 0 -----> Processing : Routing Table: 0
+-----> RoutingSelect : 1 -----> Processing : Routing Table: 1
+-----> RoutingSelect : 2 -----> Processing : Routing Table: 2
+
+Elapsed Time : 14 seconds
+
+
+현재시각 : 2026-01-20 02:06:06
+========================================
+경로 재할당
+----------------------------------------
+ ChangeList.size() : 33219
+
+
+[vesion4::Cell::validateVehicle()] The vehilce 26874 is wrong link!!
+--> Current Link: 1961204301, Vehilce Info: 1960057400 (myIndex: 19)
+Target link: 1961204301
+[vehicle 26874] Current myLinkIndex: 19 (link 1960057400)
+ --> fix to: linkIndex: 27 (link 1961204301)
+[vesion4::Cell::executeVehReceive()] Invalid vehilce 26874.
+79% done
+
+
+########## SC->doSimulationStep(49200)
+
+
+현재시각 : 2026-01-20 02:06:25
+========================================
+경로 테이블 생성
+----------------------------------------
+-----> num_vertices[links.size()] : 6771
+-----> RoutingSelect : 0 -----> Processing : Routing Table: 0
+-----> RoutingSelect : 1 -----> Processing : Routing Table: 1
+-----> RoutingSelect : 2 -----> Processing : Routing Table: 2
+
+Elapsed Time : 14 seconds
+
+
+현재시각 : 2026-01-20 02:06:39
+========================================
+경로 재할당
+----------------------------------------
+ ChangeList.size() : 30818
+
+
+84% done
+89% done
+
+
+########## SC->doSimulationStep(49800)
+
+
+현재시각 : 2026-01-20 02:07:00
+========================================
+경로 테이블 생성
+----------------------------------------
+-----> num_vertices[links.size()] : 6771
+-----> RoutingSelect : 0 -----> Processing : Routing Table: 0
+-----> RoutingSelect : 1 -----> Processing : Routing Table: 1
+-----> RoutingSelect : 2 -----> Processing : Routing Table: 2
+
+Elapsed Time : 15 seconds
+
+
+현재시각 : 2026-01-20 02:07:16
+========================================
+경로 재할당
+----------------------------------------
+ ChangeList.size() : 28449
+
+
+[vesion4::Cell::validateVehicle()] The vehilce 41629 is wrong link!!
+--> Current Link: 1961204201, Vehilce Info: 1961204901 (myIndex: 6)
+Target link: 1961204201
+[vehicle 41629] Current myLinkIndex: 6 (link 1961204901)
+ --> fix to: linkIndex: 10 (link 1961204201)
+[vesion4::Cell::executeVehReceive()] Invalid vehilce 41629.
+94% done
+99% done
+write_file_route_xml_completed
+-----> generated trips_info.size() : 54356
+-----> veh_simulated.size() : 54356
+-----> veh_arrived.size() : 28158
+-----> veh_running.size() : 26194
+-----> veh_nullptr.size() : 4
+-----> Completed : -----> route file path : ../data/2026SHELTERSEEK/scenario/output/2026shelterseek_mpdua_1_27_43200_50400.rou.xml
+현재시각 : 2026-01-20 02:07:47
+
+
+######################################
+SALT Simulator with MPDUA : Complete !
+######################################
+
+
