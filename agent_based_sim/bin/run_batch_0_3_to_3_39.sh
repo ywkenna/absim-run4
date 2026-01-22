@@ -5,7 +5,7 @@ LOG_DIR="./logs"
 
 mkdir -p "$LOG_DIR"
 
-for state in {4..7}
+for state in {8..11}
 do
   for policy in {0..39}
   do
